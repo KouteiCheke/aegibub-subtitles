@@ -25,6 +25,7 @@ class Ass
      * Ass constructor.
      *
      * @param $filename
+     *
      * @throws FileNotValidException
      * @throws FileNotFoundException
      */
@@ -37,10 +38,11 @@ class Ass
     /**
      * Parse .ass to an Ass object.
      *
-     * @return Ass
      * @throws FileNotValidException
+     *
+     * @return Ass
      */
-    private function parse(): Ass
+    private function parse(): self
     {
         if ($this->isAValidAss()) {
             return $this->processFile();

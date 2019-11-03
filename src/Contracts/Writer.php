@@ -72,7 +72,7 @@ trait Writer
      *
      * Only admits: Style and events blocks.
      *
-     * @param  string  $block
+     * @param string $block
      */
     private function writeBlock(string $block): void
     {
@@ -91,7 +91,8 @@ trait Writer
     /**
      * Return the header line.
      *
-     * @param  string  $string
+     * @param string $string
+     *
      * @return string|null
      */
     private function headerLine(string $string): ?string
@@ -107,7 +108,8 @@ trait Writer
     /**
      * Return the header block line.
      *
-     * @param  string  $string
+     * @param string $string
+     *
      * @return string|null
      */
     private function headerBlock(string $string): ?string
@@ -123,7 +125,8 @@ trait Writer
     /**
      * Return the type correct of start of line.
      *
-     * @param  string  $string
+     * @param string $string
+     *
      * @return string|null
      */
     private function lineType(string $string): ?string
@@ -139,7 +142,7 @@ trait Writer
     /**
      * Write in the new file.
      *
-     * @param  string  $string
+     * @param string $string
      */
     private function write(string $string): void
     {
@@ -150,6 +153,7 @@ trait Writer
      * Glue keys of a line with commas.
      *
      * @param $values
+     *
      * @return string
      */
     private function keysCommaSeparated($values): string
@@ -161,6 +165,7 @@ trait Writer
      * Glue values of a line with commas.
      *
      * @param $values
+     *
      * @return string
      */
     private function valuesCommaSeparated($values): string
@@ -186,6 +191,7 @@ trait Writer
      * Delete all lines with {} inside.
      *
      * @todo call through argument line.
+     *
      * @return void
      */
     private function deletedBrackets(): void

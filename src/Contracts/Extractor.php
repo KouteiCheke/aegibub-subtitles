@@ -21,8 +21,10 @@ trait Extractor
      * Extract file if is a valid file.
      *
      * @param $filename
-     * @return array
+     *
      * @throws FileNotFoundException
+     *
+     * @return array
      */
     private function extractFile($filename): array
     {
@@ -43,6 +45,7 @@ trait Extractor
      * Establish filename into data object.
      *
      * @param $filename
+     *
      * @return void
      */
     private function setFilename($filename): void
