@@ -6,12 +6,13 @@ namespace Aegisub;
 
 use Aegisub\Contracts\Extractor;
 use Aegisub\Contracts\Processor;
+use Aegisub\Contracts\Writer;
 use Aegisub\Exceptions\FileNotFoundException;
 use Aegisub\Exceptions\FileNotValidException;
 
 class Ass
 {
-    use Processor, Extractor;
+    use Processor, Extractor, Writer;
 
     /**
      * All the file content.

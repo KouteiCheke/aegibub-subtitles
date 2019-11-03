@@ -25,6 +25,27 @@ trait Transformer
     private $array = [];
 
     /**
+     * Script block.
+     *
+     * @var array
+     */
+    public $script;
+
+    /**
+     * Style block.
+     *
+     * @var array
+     */
+    public $styles;
+
+    /**
+     * Event block.
+     *
+     * @var array
+     */
+    public $events;
+
+    /**
      * Transform file into an valid Ass object.
      *
      * @return $this
